@@ -1,174 +1,91 @@
 * {
-
     box-sizing: border-box;
-
 }
-
-
 
 body {
-
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-
     background: white;
-
     color: black;
-
 }
-
-
 
 header {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 30px;
-
 }
-
-
 
 nav a {
-
     margin-left: 20px;
-
     text-decoration: none;
-
     color: black;
-
 }
-
-
 
 .hero {
-
     text-align: center;
-
     padding: 70px 20px;
-
 }
 
-
-
 .hero h2 {
-
     font-size: 2.5rem;
-
     margin-bottom: 15px;
 }
 
-
-
 .button {
-
     display: inline-block;
-
     margin-top: 30px;
-
     padding: 15px 30px;
-
     background: black;
-
     color: white;
-
     text-decoration: none;
-
 }
-
-
 
 .section {
-
     text-align: center;
-
     padding: 50px 20px;
-
 }
-
-
 
 /* product layout */
-
 .products {
-
     display: flex;
-
     justify-content: center;
-
     align-items: flex-start;
-
     gap: 20px;
-
     flex-wrap: wrap;
-
 }
-
-
 
 .product {
-
     width: 320px;
-
 }
-
 
 /* image placeholders */
 
 .placeholder {
 
     height: 350px;
-
     background: #eeeeee;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
-
 
 /* buttons */
-
 button {
-
     padding: 12px 25px;
-
     border: none;
-
     background: black;
-
     color: white;
-
     cursor: pointer;
-
 }
-
-
 
 /* countdown */
-
 #timer {
-
     display: flex;
-
     justify-content: center;
-
     gap: 25px;
-
     margin: 30px;
-
 }
-
-
 
 #timer span {
 
@@ -181,45 +98,24 @@ button {
 
 
 #timer strong {
-
     font-size: 2rem;
-
 }
-
-
 
 /* footer */
-
 footer {
-
     text-align: center;
-
     padding: 40px;
-
 }
-
-
 
 footer a {
-
     margin: 10px;
-
     color: black;
-
 }
 
-
-
-
-
 /* VIP ONLY ARCHIVE SCROLL */
-
 .archive-scroll {
-
     display: flex;
-
     gap: 12px;
-
     overflow-x: auto;
 
     padding: 15px 0;
@@ -228,22 +124,12 @@ footer a {
 
 }
 
-
-
 .archive-scroll img {
-
     width: 260px;
-
     height: 340px;
-
     object-fit: cover;
-
     flex-shrink: 0;
-
 }
-
-
-
 
 /* archive scrollbar */
 .archive-scroll::-webkit-scrollbar {
@@ -256,8 +142,6 @@ footer a {
     background: #eeeeee;
 }
 
-
-
 /* mobile */
 @media (max-width:700px) {
     .archive-scroll img {
@@ -269,32 +153,20 @@ footer a {
     }
 }
 h1 {
-
     letter-spacing: 3px;
-
     text-transform: uppercase;
-
 }
-
 
 h2 {
-
     letter-spacing: 2px;
-
     text-transform: lowercase;
-
 }
-
 
 h3 {
-
     margin-top: 20px;
-
 }
 
-
 p {
-
     line-height: 1.6;
 
 }
