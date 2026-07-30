@@ -70,7 +70,7 @@ nav a {
 
 .product {
 
-    width: 320px;
+    width: 340px;
 
     flex-shrink: 0;
 
@@ -214,5 +214,32 @@ h3 {
 
 p {
     line-height: 1.6;
+
+}
+/* larger images for drop and archive */
+
+.product .archive-scroll img {
+
+    width: 300px;
+
+    height: 400px;
+
+    object-fit: cover;
+
+}
+/* hide scrollbars */
+
+.products,
+.archive-scroll {
+
+    scrollbar-width: none;
+
+}
+
+
+.products::-webkit-scrollbar,
+.archive-scroll::-webkit-scrollbar {
+
+    display: none;
 
 }
