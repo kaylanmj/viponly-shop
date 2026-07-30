@@ -246,67 +246,55 @@ footer a {
 
 
 /* archive scrollbar */
-
 .archive-scroll::-webkit-scrollbar {
-
     height: 8px;
-
 }
-
-
-
 .archive-scroll::-webkit-scrollbar-thumb {
-
     background: black;
-
 }
-
-
-
 .archive-scroll::-webkit-scrollbar-track {
-
     background: #eeeeee;
-
 }
-
-
 
 
 
 /* mobile */
-
-@media (max-width: 700px) {
-
-
-    header {
-
-        flex-direction: column;
-
-        gap: 20px;
-
-    }
-
-
-    nav a {
-
-        margin: 0 10px;
-
-    }
-
-
-    .hero h2 {
-
-        font-size: 2rem;
-
-    }
-
-
+@media (max-width:700px) {
     .archive-scroll img {
-
-        width: 280px;
-
-        height: 360px;
-
+        width: 220px;
+        height: 300px;
     }
+    .section {
+        padding: 40px 15px;
+    }
+}
+h1 {
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+h2 {
+
+    letter-spacing: 2px;
+
+    text-transform: lowercase;
+
+}
+
+
+h3 {
+
+    margin-top: 20px;
+
+}
+
+
+p {
+
+    line-height: 1.6;
 
 }
