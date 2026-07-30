@@ -1,22 +1,60 @@
-// VIPONLY website scripts
+const dropDate = new Date("August 1, 2026 00:00:00").getTime();
 
-document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("VIPONLY website loaded.");
+const countdown = setInterval(function() {
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener("click", function(e) {
-            const target = document.querySelector(this.getAttribute("href"));
 
-            if (target) {
-                e.preventDefault();
+    const now = new Date().getTime();
 
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
+    const distance = dropDate - now;
 
-});
+
+
+    const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+    );
+
+
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+    );
+
+
+
+    document.getElementById("days").innerHTML = days;
+
+    document.getElementById("hours").innerHTML = hours;
+
+    document.getElementById("minutes").innerHTML = minutes;
+
+    document.getElementById("seconds").innerHTML = seconds;
+
+
+
+    if (distance < 0) {
+
+
+        clearInterval(countdown);
+
+
+        document.getElementById("timer").innerHTML =
+        "drop 001 is live";
+
+
+    }
+
+
+}, 1000);
