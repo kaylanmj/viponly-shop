@@ -48,17 +48,30 @@ nav a {
 
 /* product layout */
 .products {
+
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+
     gap: 20px;
-    flex-wrap: wrap;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    padding: 20px 0;
+
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
 }
 
 .product {
-    width: 320px;
-}
 
+    width: 300px;
+
+    flex-shrink: 0;
+
+}
 /* image placeholders */
 
 .placeholder {
@@ -145,16 +158,50 @@ footer a {
 .archive-scroll::-webkit-scrollbar-track {
     background: #eeeeee;
 }
+.products::-webkit-scrollbar {
 
+    height: 8px;
+
+}
+
+
+.products::-webkit-scrollbar-thumb {
+
+    background: black;
+
+}
+
+
+.products::-webkit-scrollbar-track {
+
+    background: #eeeeee;
+
+}
 /* mobile */
 @media (max-width:700px) {
+
     .archive-scroll img {
+
         width: 220px;
+
         height: 300px;
+
     }
+
+
+    .product {
+
+        width: 260px;
+
+    }
+
+
     .section {
+
         padding: 40px 15px;
+
     }
+
 }
 h1 {
     letter-spacing: 3px;
