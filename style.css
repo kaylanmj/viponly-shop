@@ -62,8 +62,7 @@ nav a {
 /* image placeholders */
 
 .placeholder {
-
-    height: 350px;
+    height: 420px;
     background: #eeeeee;
     display: flex;
     justify-content: center;
@@ -114,13 +113,18 @@ footer a {
 
 /* VIP ONLY ARCHIVE SCROLL */
 .archive-scroll {
+
     display: flex;
+
     gap: 12px;
+
     overflow-x: auto;
 
     padding: 15px 0;
 
     scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
 
 }
 
