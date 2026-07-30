@@ -243,3 +243,24 @@ p {
     display: none;
 
 }
+/* drop product styling */
+
+.product .button {
+
+    margin-top: 15px;
+
+}
+
+
+.product p {
+
+    margin: 8px 0;
+
+}
+
+
+.product h3 {
+
+    text-transform: lowercase;
+
+}
