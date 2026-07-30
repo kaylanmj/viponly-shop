@@ -92,8 +92,9 @@ nav a {
 
 
 
-.products,
-.gallery {
+/* product layout */
+
+.products {
 
     display: flex;
 
@@ -115,6 +116,8 @@ nav a {
 
 
 
+/* image placeholders */
+
 .placeholder {
 
     height: 350px;
@@ -131,6 +134,8 @@ nav a {
 
 
 
+/* buttons */
+
 button {
 
     padding: 12px 25px;
@@ -141,9 +146,13 @@ button {
 
     color: white;
 
+    cursor: pointer;
+
 }
 
 
+
+/* countdown */
 
 #timer {
 
@@ -177,6 +186,8 @@ button {
 
 
 
+/* footer */
+
 footer {
 
     text-align: center;
@@ -197,9 +208,11 @@ footer a {
 
 
 
-/* archive horizontal scroll gallery */
 
-.archive-gallery {
+
+/* VIP ONLY ARCHIVE SCROLL */
+
+.archive-scroll {
 
     display: flex;
 
@@ -207,19 +220,21 @@ footer a {
 
     overflow-x: auto;
 
+    padding: 30px 0;
+
     scroll-behavior: smooth;
 
-    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
 
 }
 
 
 
-.archive-gallery img {
+.archive-scroll img {
 
-    width: 320px;
+    width: 350px;
 
-    height: 420px;
+    height: 450px;
 
     object-fit: cover;
 
@@ -229,9 +244,11 @@ footer a {
 
 
 
+
+
 /* archive scrollbar */
 
-.archive-gallery::-webkit-scrollbar {
+.archive-scroll::-webkit-scrollbar {
 
     height: 8px;
 
@@ -239,7 +256,7 @@ footer a {
 
 
 
-.archive-gallery::-webkit-scrollbar-thumb {
+.archive-scroll::-webkit-scrollbar-thumb {
 
     background: black;
 
@@ -247,7 +264,7 @@ footer a {
 
 
 
-.archive-gallery::-webkit-scrollbar-track {
+.archive-scroll::-webkit-scrollbar-track {
 
     background: #eeeeee;
 
@@ -255,7 +272,9 @@ footer a {
 
 
 
-/* mobile adjustments */
+
+
+/* mobile */
 
 @media (max-width: 700px) {
 
@@ -283,63 +302,12 @@ footer a {
     }
 
 
-    .archive-gallery img {
+    .archive-scroll img {
 
         width: 280px;
 
         height: 360px;
 
     }
-
-}
-.archive-scroll {
-
-    display: flex;
-
-    gap: 20px;
-
-    overflow-x: auto;
-
-    padding: 20px 0;
-
-    scroll-behavior: smooth;
-
-    -webkit-overflow-scrolling: touch;
-
-}
-
-
-.archive-scroll img {
-
-    width: 350px;
-
-    height: 450px;
-
-    object-fit: cover;
-
-    flex-shrink: 0;
-
-}
-
-
-/* scrollbar styling */
-
-.archive-scroll::-webkit-scrollbar {
-
-    height: 8px;
-
-}
-
-
-.archive-scroll::-webkit-scrollbar-thumb {
-
-    background: black;
-
-}
-
-
-.archive-scroll::-webkit-scrollbar-track {
-
-    background: #eeeeee;
 
 }
