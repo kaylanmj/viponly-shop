@@ -47,6 +47,8 @@ nav a {
 }
 
 /* product layout */
+/* drop #001 horizontal layout */
+
 .products {
 
     display: flex;
@@ -65,23 +67,16 @@ nav a {
 
 }
 
+
 .product {
 
-    width: 300px;
+    width: 320px;
 
     flex-shrink: 0;
 
-}
-/* image placeholders */
+    text-align: center;
 
-.placeholder {
-    height: 420px;
-    background: #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
 /* buttons */
 button {
     padding: 12px 25px;
