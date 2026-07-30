@@ -46,13 +46,10 @@ const countdown = setInterval(function() {
 
     if (distance < 0) {
 
-
         clearInterval(countdown);
-
 
         document.getElementById("timer").innerHTML =
         "drop 001 is live";
-
 
     }
 
