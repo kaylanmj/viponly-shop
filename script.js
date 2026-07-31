@@ -55,3 +55,18 @@ const countdown = setInterval(function() {
 
 
 }, 1000);
+const sections = document.querySelectorAll(".fade");
+
+window.addEventListener("scroll", () => {
+
+    sections.forEach(section => {
+
+        const position = section.getBoundingClientRect().top;
+
+        if(position < window.innerHeight - 100){
+            section.classList.add("show");
+        }
+
+    });
+
+});
