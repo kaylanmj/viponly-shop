@@ -11,7 +11,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -42,7 +44,7 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 180px 20px 160px;
 }
 
 .hero h2 {
@@ -75,44 +77,40 @@ nav a:hover {
     padding: 50px 20px;
 }
 
-/* product layout */
-/* drop #001 horizontal layout */
+/*drop page*/
 
 .products {
-
     display: flex;
-
     gap: 20px;
-
     overflow-x: auto;
-
     justify-content: flex-start;
-
     padding: 20px 0;
-
     scroll-behavior: smooth;
-
     -webkit-overflow-scrolling: touch;
-
 }
 
-
 .product {
-
     width: 380px;
-
     flex-shrink: 0;
-
     text-align: center;
-
 }
 /* buttons */
 button {
-    padding: 12px 25px;
-    border: none;
+    padding: 14px 34px;
     background: black;
     color: white;
+    border: 1px solid black;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background: white;
+    color: black;
 }
 
 /* countdown */
@@ -152,34 +150,13 @@ button {
     flex-shrink: 0;
 }
 
-/* archive scrollbar */
-.archive-scroll::-webkit-scrollbar {
-    height: 8px;
-}
-.archive-scroll::-webkit-scrollbar-thumb {
-    background: black;
-}
-.archive-scroll::-webkit-scrollbar-track {
-    background: #eeeeee;
-}
-.products::-webkit-scrollbar {
-    height: 8px;
-}
-
-.products::-webkit-scrollbar-thumb {
-    background: black;
-}
-
-.products::-webkit-scrollbar-track {
-    background: #eeeeee;
-}
 /* mobile */
 
 h1 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 5px;
     font-weight: 700;
-    letter-spacing: 3px;
     text-transform: none;
     margin: 0;
 }
@@ -226,12 +203,9 @@ p {
 
 }
 
-
 .products::-webkit-scrollbar,
 .archive-scroll::-webkit-scrollbar {
-
     display: none;
-
 }
 /* drop product styling */
 
@@ -265,6 +239,7 @@ p {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    image-rendering: auto;
 }
 
 /* smaller detail images */
@@ -278,9 +253,6 @@ p {
 header h1 {
     color: white;
     margin: 0;
-}
-nav a {
-    color: white;
 }
 
 /* bottom footer bar */
@@ -298,6 +270,7 @@ footer a {
 /* ===========================
    ARCHIVE PAGE
 =========================== */
+/* premium archive styling */
 .archive-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -308,33 +281,22 @@ footer a {
 }
 .archive-item {
     text-align: center;
+    position: relative;
 }
-
 .archive-item img {
     width: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
-    border-radius: 0;
     cursor: pointer;
-    transition: transform .3s ease, box-shadow .3s ease;
+    border-radius: 0px;
+    transition: transform .5s ease, filter .5s ease;
+    image-rendering: auto;
 }
-
-.archive-item img {
-    transition:
-    transform .5s ease,
-    filter .5s ease;
-}
-
 .archive-item img:hover {
     transform: scale(1.05);
     filter: brightness(.92);
 }
-.archive-item h3 {
-    margin: 18px 0 8px;
-    letter-spacing: 2px;
-}
-
 .archive-item p {
     margin: 0;
     color: #666;
@@ -342,12 +304,38 @@ footer a {
     letter-spacing: 1px;
     text-transform: none;
 }
-
+.archive-item p {
+    margin-top: 10px;
+    margin: 8px 0;
+    color: black;
+    font-size: .95rem;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+.archive-item:hover h3 {
+    letter-spacing: 3px;
+    transition: .3s ease;
+}
+.archive-item h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    margin: 18px 0 8px;
+}
+.archive-item span {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: .75rem;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #777;
+}
 /* mobile */
 @media (max-width:700px) {
     .archive-grid {
         grid-template-columns: 1fr;
         padding: 0 20px;
+    }
     
     .archive-scroll img {
         width: 220px;
@@ -365,46 +353,8 @@ footer a {
     .section {
         padding: 40px 15px;
     }
-
-}
-}
-.archive-item:hover h3 {
-    letter-spacing: 3px;
-    transition: .3s ease;
 }
 
-.archive-item p {
-    margin-top: 10px;
-}
-/* premium archive styling */
-
-.archive-item {
-    position: relative;
-}
-
-
-.archive-item h3 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-
-.archive-item p {
-    margin: 8px 0;
-    color: black;
-    font-size: .95rem;
-    text-transform: none;
-    letter-spacing: 1px;
-}
-
-.archive-item span {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: .75rem;
-    letter-spacing: 2px;
-    text-transform: none;
-    color: #777;
-}
 .view-piece {
     display:inline-block;
     margin-top:15px;
