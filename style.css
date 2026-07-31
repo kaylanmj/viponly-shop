@@ -316,7 +316,7 @@ footer a {
     filter: brightness(.95);
 }
 .archive-item p {
-    margin: 10px 0;
+    margin: 0;
     color: black;
     font-size: .95rem;
     letter-spacing: 1px;
@@ -328,7 +328,7 @@ footer a {
 }
 .archive-item h3 {
     font-size: 1.2rem;
-    margin: 18px 0 8px;
+    margin: 10px 0 2px;
     letter-spacing: 2px;
     transition: letter-spacing .3s ease;
 }
