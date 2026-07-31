@@ -258,7 +258,7 @@ p {
 
 .product h3 {
 
-    text-transform: lowercase;
+    text-transform: none;
 
 }
 /* luxury product cover image */
