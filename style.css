@@ -114,19 +114,12 @@ button {
 
 /* VIP ONLY ARCHIVE SCROLL */
 .archive-scroll {
-
     display: flex;
-
     gap: 12px;
-
     overflow-x: auto;
-
     padding: 15px 0;
-
     scroll-behavior: smooth;
-
     -webkit-overflow-scrolling: touch;
-
 }
 
 .archive-scroll img {
@@ -147,23 +140,15 @@ button {
     background: #eeeeee;
 }
 .products::-webkit-scrollbar {
-
     height: 8px;
-
 }
-
 
 .products::-webkit-scrollbar-thumb {
-
     background: black;
-
 }
 
-
 .products::-webkit-scrollbar-track {
-
     background: #eeeeee;
-
 }
 /* mobile */
 
@@ -370,7 +355,6 @@ footer a {
     letter-spacing: 2px;
 }
 
-
 .archive-item p {
     margin: 8px 0;
     color: black;
@@ -379,18 +363,20 @@ footer a {
     letter-spacing: 1px;
 }
 
-
 .archive-item span {
-
     display: inline-block;
     margin-top: 8px;
-
     font-size: .75rem;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
-
     color: #777;
-
+}
+.view-piece {
+    display:inline-block;
+    margin-top:15px;
+    font-size:.8rem;
+    letter-spacing:2px;
+    color:black;
+    text-decoration:none;
+    border-bottom:1px solid black;
 }
