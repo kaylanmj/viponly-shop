@@ -301,11 +301,16 @@ footer a {
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.archive-item img:hover {
-    transform: scale(1.03);
-    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+.archive-item img {
+    transition:
+    transform .5s ease,
+    filter .5s ease;
 }
 
+.archive-item img:hover {
+    transform: scale(1.05);
+    filter: brightness(.92);
+}
 .archive-item h3 {
     margin: 18px 0 8px;
     letter-spacing: 2px;
@@ -351,4 +356,41 @@ footer a {
 
 .archive-item p {
     margin-top: 10px;
+}
+/* premium archive styling */
+
+.archive-item {
+    position: relative;
+}
+
+
+.archive-item h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+.archive-item p {
+    margin: 8px 0;
+    color: black;
+    font-size: .95rem;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+
+.archive-item span {
+
+    display: inline-block;
+    margin-top: 8px;
+
+    font-size: .75rem;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #777;
+
 }
