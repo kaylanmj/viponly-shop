@@ -435,8 +435,9 @@ footer img:hover {
     transform: scale(1.1);
 }
 .story-section {
-    max-width: 800px;
-    margin: 120px auto;
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 0 20px;
     text-align: left;
 }
 
@@ -454,10 +455,10 @@ footer img:hover {
     font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: 3px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .story-section p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.9;
 }
