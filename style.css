@@ -295,3 +295,47 @@ p {
     object-fit: cover;
 
 }
+/* top navigation bar */
+
+header {
+
+    background: black;
+    color: white;
+    padding: 20px 30px;
+
+}
+
+
+header h1 {
+
+    color: white;
+    margin: 0;
+
+}
+
+
+nav a {
+
+    color: white;
+
+}
+
+
+
+/* bottom footer bar */
+
+footer {
+
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+
+
+footer a {
+
+    color: white;
+
+}
