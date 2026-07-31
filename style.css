@@ -13,13 +13,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px 30px;
+    background: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 0.95rem;
 }
 
 .hero {
@@ -315,27 +321,21 @@ header h1 {
 
 
 nav a {
-
     color: white;
-
 }
 
 
 
 /* bottom footer bar */
-
 footer {
-
     background: black;
     color: white;
     text-align: center;
-    padding: 30px;
-
+    padding: 35px;
 }
 
-
 footer a {
-
+    margin: 10px;
     color: white;
-
+    text-decoration: none;
 }
