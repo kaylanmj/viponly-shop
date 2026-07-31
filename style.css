@@ -14,6 +14,9 @@ body {
 html {
     scroll-behavior: smooth;
 }
+section {
+    scroll-margin-top: 90px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -298,19 +301,11 @@ footer a {
     filter: brightness(.92);
 }
 .archive-item p {
-    margin: 0;
-    color: #666;
-    font-size: .9rem;
-    letter-spacing: 1px;
-    text-transform: none;
-}
-.archive-item p {
-    margin-top: 10px;
-    margin: 8px 0;
+    margin: 10px 0;
     color: black;
     font-size: .95rem;
-    text-transform: none;
     letter-spacing: 1px;
+    text-transform: none;
 }
 .archive-item:hover h3 {
     letter-spacing: 3px;
@@ -318,9 +313,9 @@ footer a {
 }
 .archive-item h3 {
     font-size: 1.2rem;
-    margin-top: 20px;
-    letter-spacing: 2px;
     margin: 18px 0 8px;
+    letter-spacing: 2px;
+    transition: letter-spacing .3s ease;
 }
 .archive-item span {
     display: inline-block;
