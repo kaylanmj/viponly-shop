@@ -198,9 +198,10 @@ h3 {
 }
 
 p {
-    line-height: 1.6;
-
+    line-height: 1.75;
+    margin: 0 0 18px;
 }
+
 /* larger images for drop and archive */
 
 .product .archive-scroll img {
