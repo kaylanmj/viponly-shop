@@ -407,3 +407,28 @@ footer img:hover {
     opacity: .7;
     transform: scale(1.1);
 }
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 12px;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+.social-icons img:hover {
+    opacity: .65;
+    transform: scale(1.1);
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin: 10px;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+footer img:hover {
+    opacity: .65;
+    transform: scale(1.1);
+}
