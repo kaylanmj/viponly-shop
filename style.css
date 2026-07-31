@@ -195,18 +195,18 @@ footer a {
 }
 h1 {
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 h2 {
     letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 h3 {
     margin-top: 20px;
     letter-spacing: 1.5px;
-    text-transform: lowercase;
+    text-transform: none;
     font-size: 1.1rem;
 }
 
