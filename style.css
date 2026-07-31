@@ -196,20 +196,19 @@ footer a {
 h1 {
     letter-spacing: 3px;
     text-transform: none;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
-
 h2 {
     letter-spacing: 2px;
     text-transform: none;
 }
-
 h3 {
     margin-top: 20px;
     letter-spacing: 1.5px;
     text-transform: none;
     font-size: 1.1rem;
 }
-
 p {
     line-height: 1.6;
 
