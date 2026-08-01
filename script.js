@@ -35,11 +35,16 @@ if (timer) {
 
 // ABOUT PAGE SCROLL ANIMATION
 const sections = document.querySelectorAll(".fade");
-function revealSections(){
+function revealSections() {
     sections.forEach(section => {
-        const position = section.getBoundingClientRect().top;
-        if(position < window.innerHeight - 100){
+        const rect = section.getBoundingClientRect();
+        if (
+            rect.top < window.innerHeight * 0.75 &&
+            rect.bottom > window.innerHeight * 0.25
+        ) {
             section.classList.add("show");
+        } else {
+            section.classList.remove("show");
         }
     });
 }
