@@ -435,10 +435,20 @@ footer img:hover {
     transform: scale(1.1);
 }
 .story-section{
-    max-width:700px;
-    margin:180px auto;
-}
+    min-height:70vh;
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:40px;
+}
 .story-section.left{
     margin-left:8%;
     margin-right:auto;
@@ -453,14 +463,16 @@ footer img:hover {
 
 .fade {
     opacity: 0;
-    transform: translateY(60px);
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(80px);
+    transition: opacity 0.9s ease,
+                transform 0.9s ease;
 }
 
 .fade.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .story-section h2 {
     font-size: 3.5rem;
     font-weight: 500;
