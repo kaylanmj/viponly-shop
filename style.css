@@ -540,6 +540,9 @@ footer img:hover {
 .split.right{
     flex-direction:row-reverse;
 }
+.split.left{
+    flex-direction:row;
+}
 @media (max-width:900px){
 
 .split{
