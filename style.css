@@ -499,13 +499,13 @@ footer img:hover {
     border-radius:4px;
 }
 .hannah img{
-    max-width:500px;
+    max-width:320px;
 }
 .camp img{
-    max-width:850px;
+    max-width:500px;
 }
 .apron img{
-    max-width:600px;
+    max-width:380px;
 }
 .split{
     display:flex;
@@ -528,7 +528,7 @@ footer img:hover {
 
 .story-image img{
     width:100%;
-    max-width:500px;
+    max-width:400px;
     display:block;
     margin:auto;
     border-radius:4px;
