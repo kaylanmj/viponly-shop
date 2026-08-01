@@ -484,3 +484,26 @@ footer img:hover {
     font-size: 1.2rem;
     line-height: 1.9;
 }
+.image-block{
+    max-width:900px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.image-block img{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:4px;
+}
+.hannah img{
+    max-width:500px;
+}
+.camp img{
+    max-width:850px;
+}
+.apron img{
+    max-width:600px;
+}
