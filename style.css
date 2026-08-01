@@ -507,3 +507,51 @@ footer img:hover {
 .apron img{
     max-width:600px;
 }
+.split{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+
+    max-width:1200px;
+    margin:120px auto;
+    padding:0 40px;
+}
+
+.story-text{
+    flex:1;
+}
+
+.story-image{
+    flex:1;
+}
+
+.story-image img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    border-radius:4px;
+}
+
+.story-text p{
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+.right{
+    flex-direction:row-reverse;
+}
+@media (max-width:900px){
+
+.split{
+    flex-direction:column !important;
+    gap:40px;
+    text-align:center;
+}
+
+.story-image img{
+    max-width:100%;
+}
+
+}
