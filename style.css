@@ -511,7 +511,7 @@ footer img:hover {
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:70px;
+    gap:40px;
     max-width:1200px;
     margin:70px auto;
     padding:0 40px;
@@ -526,7 +526,7 @@ footer img:hover {
 
 .story-image img{
     width:100%;
-    max-width:280px;
+    max-width:220px;
     display:block;
     margin:auto;
     border-radius:4px;
