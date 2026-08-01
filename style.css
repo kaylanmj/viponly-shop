@@ -512,12 +512,10 @@ footer img:hover {
     align-items:center;
     justify-content:center;
     gap:70px;
-
     max-width:1200px;
-    margin:120px auto;
+    margin:70px auto;
     padding:0 40px;
 }
-
 .story-text{
     flex:1;
 }
@@ -528,7 +526,7 @@ footer img:hover {
 
 .story-image img{
     width:100%;
-    max-width:400px;
+    max-width:280px;
     display:block;
     margin:auto;
     border-radius:4px;
@@ -539,7 +537,7 @@ footer img:hover {
     line-height:1.8;
 }
 
-.right{
+.split.right{
     flex-direction:row-reverse;
 }
 @media (max-width:900px){
